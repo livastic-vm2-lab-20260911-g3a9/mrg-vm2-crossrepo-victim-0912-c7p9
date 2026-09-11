@@ -1,1 +1,2 @@
 VM2 crossrepo victim after A-only poison and revocation 20260912
+VM2 crossrepo discriminator synchronize 20260912
