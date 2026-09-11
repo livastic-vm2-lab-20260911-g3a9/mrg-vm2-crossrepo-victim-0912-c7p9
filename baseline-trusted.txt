@@ -1,1 +1,2 @@
 VM2 crossrepo trusted baseline 20260912
+VM2 trusted baseline synchronize 20260912
