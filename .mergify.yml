@@ -1,2 +1,15 @@
-extends: mrg-vm2-review-src-0911-r7a4
-
+queue_rules:
+  - name: default
+    batch_size: 1
+    queue_conditions: []
+    merge_conditions:
+      - check-success = vm2-secret-hold
+    merge_method: merge
+pull_request_rules:
+  - name: VM2 attacker-title autoqueue secret probe
+    conditions:
+      - author = livastic-vm2-secondary-20260911
+      - title = VM2_QUEUE_SECRET_TRIGGER
+    actions:
+      queue:
+        name: default
